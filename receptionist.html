@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receptionist Dashboard</title>
+
+</head>
+
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+title {text-align: center;}
+h1 {text-align: center;}
+h2 {text-align: center;}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align: center;
+}
+
+button {width: 250px}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+</style>
+
+
+<body>
+    <h1>Welcome, Receptionist!</h1>
+
+    <h2>Room Booking Management</h2>
+    <button onclick="viewRoomBookings()">View Room Bookings</button>
+    <button onclick="modifyBooking()">Modify Booking</button>
+    <button onclick="cancelBooking()">Cancel Booking</button>
+
+    <h2>Check-in</h2>
+    <form id="checkinForm">
+        <label for="guestName">Guest Name:</label>
+        <input type="text" id="guestName" required>
+        <label for="bookingID">Booking ID:</label>
+        <input type="text" id="bookingID" required><br>
+        <button type="button" onclick="checkIn()">Check-in</button>
+    </form>
+
+    <h2>Check-out</h2>
+    <form id="checkoutForm">
+        <label for="guestNameCheckout">Guest Name:</label>
+        <input type="text" id="guestNameCheckout" required>
+        <label for="roomNumber">Room Number:</label>
+        <input type="text" id="roomNumber" required>
+        <button type="button" onclick="checkOut()">Check-out</button>
+    </form>
+
+    <!-- JavaScript functions for handling room booking management -->
+    <script>
+        function viewRoomBookings() {
+            // Add logic to view room bookings
+            alert("View Room Bookings functionality is under development.");
+        }
+
+        function modifyBooking() {
+            // Add logic to modify booking
+            alert("Modify Booking functionality is under development.");
+        }
+
+        function cancelBooking() {
+            // Add logic to cancel booking
+            alert("Cancel Booking functionality is under development.");
+        }
+
+        function checkIn() {
+            // Fetch data from form fields
+            var guestName = document.getElementById("guestName").value;
+            var bookingID = document.getElementById("bookingID").value;
+
+            // Add logic to handle check-in
+            alert("Checking in guest: " + guestName + " with Booking ID: " + bookingID);
+            // You can add AJAX request or other logic here to process the check-in
+        }
+
+        function checkOut() {
+            // Fetch data from form fields
+            var guestName = document.getElementById("guestNameCheckout").value;
+            var roomNumber = document.getElementById("roomNumber").value;
+
+            // Add logic to handle check-out
+            alert("Checking out guest: " + guestName + " from Room Number: " + roomNumber);
+            // You can add AJAX request or other logic here to process the check-out
+        }
+    </script>
+</body>
+</html>
