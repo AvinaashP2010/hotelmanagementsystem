@@ -87,7 +87,7 @@ button:hover {
                     <option value="manager">Manager</option>
                 </select>
             </div>
-         <button type="submit" onclick="receptionist.html">Login</button>
+         <button type="submit">Login</button>
         </form>
     </div>
 
@@ -109,9 +109,9 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 
     // Redirect based on user type
     if (userType === "receptionist") {
-        window.location.href = "receptionist_dashboard.html";
+        window.location.href = "receptionist.html";
     } else if (userType === "manager") {
-        window.location.href = "manager_dashboard.html";
+        window.location.href = "manager.html";
     }
 });
 </script>
