@@ -11,7 +11,7 @@
 <style>
 body {
     font-family: Arial, sans-serif;
-    background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('');
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
@@ -40,6 +40,10 @@ button:hover {
     background-color: #0056b3;
 }
 
+div{
+    align: center;
+}
+
 </style>
 
 
@@ -52,6 +56,7 @@ button:hover {
     <button onclick="cancelBooking()">Cancel Booking</button>
 
     <h2>Check-in</h2>
+    <div>
     <form id="checkinForm">
         <label for="guestName" align="center">Guest Name:</label>
         <input type="text" id="guestName" required align="center">
@@ -59,7 +64,8 @@ button:hover {
         <input type="text" id="bookingID" required align="center"><br><br>
         <button type="button" onclick="checkIn()" align="center">Check-in</button>
     </form>
-
+    </div>
+    <div>
     <h2>Check-out</h2>
     <form id="checkoutForm">
         <label for="guestNameCheckout">Guest Name:</label>
@@ -68,7 +74,7 @@ button:hover {
         <input type="text" id="roomNumber" required><br><br>
         <button type="button" onclick="checkOut()">Check-out</button>
     </form>
-
+    </div>
     <!-- JavaScript functions for handling room booking management -->
     <script>
         function viewRoomBookings() {
