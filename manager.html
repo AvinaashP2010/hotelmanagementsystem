@@ -38,7 +38,12 @@
         button:hover {
             background-color: #0056b3;
         }
-    
+
+        #staff {
+            margin-left: 500px;
+            margin-top: -250px;
+        }
+            
     </style>
 </head>
 <body>
@@ -49,7 +54,7 @@
             <button onclick="viewOccupancyReport()">View Occupancy Report</button><br>
             <button onclick="viewRevenueReport()">View Revenue Report</button>
         </div>
-        <div class="section">
+        <div class="section" id="staff">
             <h2>Manage Staff</h2>
             <button onclick="viewStaff()">View Staff</button><br>
             <button onclick="addStaff()">Add Staff</button>
@@ -59,7 +64,7 @@
             <button onclick="viewRoomAvailability()">View Room Availability</button><br>
             <button onclick="updateRoomStatus()">Update Room Status</button>
         </div>
-        <div class="section">
+        <div class="section" id="inventory">
             <h2>Inventory</h2>
             <button onclick="">Check inventory</button>
         </div>
