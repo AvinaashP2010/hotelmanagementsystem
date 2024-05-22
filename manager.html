@@ -46,28 +46,37 @@
             background-color: #0056b3;
         }
         button {width: 250px}
+        
+        #second {
+            float:left
+        }
+        
+        #fourth {
+            float:left
+        }
+        
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Welcome, Manager!</h1>
 
-        <div class="section">
+        <div class="section" id="first">
             <h2>View Reports</h2>
             <button onclick="viewOccupancyReport()">View Occupancy Report</button>
             <button onclick="viewRevenueReport()">View Revenue Report</button>
         </div>
-        <div class="section">
+        <div class="section" id="second">
             <h2>Manage Staff</h2>
             <button onclick="viewStaff()">View Staff</button>
             <button onclick="addStaff()">Add Staff</button>
         </div>
-        <div class="section">
+        <div class="section" id="third">
             <h2>Manage Rooms</h2>
             <button onclick="viewRoomAvailability()">View Room Availability</button>
             <button onclick="updateRoomStatus()">Update Room Status</button>
         </div>
-        <div class="section">
+        <div class="section" id="fourth">
             <h2>Inventory</h2>
             <button onclick="">Check inventory</button>
         </div>
