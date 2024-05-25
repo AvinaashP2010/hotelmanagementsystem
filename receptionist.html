@@ -40,45 +40,86 @@ button:hover {
     background-color: #0056b3;
 }
 
- .center {
+ #labels {
      margin-left: 200px;
      margin-right: auto;     
  }   
+
+#inputs {
+     margin-left: 200px;
+     margin-right: auto;     
+ }
+
+#buttons {
+     margin-left: 200px;
+     margin-right: auto;     
+ }    
+
     
 </style>
 
 
 <body>
     <h1>Welcome, Receptionist!</h1>
-
     <h2>Room Booking Management</h2>
-    <div class="center">
+
+    <div id="bookings">
+    
     <button onclick="viewRoomBookings()">View Room Bookings</button>
     <button onclick="modifyBooking()">Modify Booking</button>
     <button onclick="cancelBooking()">Cancel Booking</button>
 
+    </div>
+        
     <h2>Check-in</h2>
+
     
-    <div class="center">
     <form id="checkinForm">
+        <div id="labels">
         <label for="guestName" align="center">Guest Name:</label>
+        </div>
+
+        <div class="inputs">
         <input type="text" id="guestName" required align="center">
+        </div>
+        
+        <div class="labels">
         <label for="bookingID" align="center">Booking ID:</label>
+        </div>
+
+        <div class="inputs">
         <input type="text" id="bookingID" required align="center"><br><br>
+        </div>
+
+        <div class="buttons">
         <button type="button" onclick="checkIn()" align="center">Check-in</button>
+        </div>
     </form>
-    </div>
-    <div class="center">
+        
+    
     <h2>Check-out</h2>
+
+    
+        
     <form id="checkoutForm">
+        <div class="labels">
         <label for="guestNameCheckout">Guest Name:</label>
+        </div>
+        <div class="inputs">
         <input type="text" id="guestNameCheckout" required>
+        </div>
+        <div class="labels">
         <label for="roomNumber">Room Number:</label>
+        </div>
+        <div class="inputs">    
         <input type="text" id="roomNumber" required><br><br>
+        </div>
+        <div class="buttons">    
         <button type="button" onclick="checkOut()">Check-out</button>
+        </div>
     </form>
-    </div>
-    </div>    
+
+        
     <!-- JavaScript functions for handling room booking management -->
     <script>
         function viewRoomBookings() {
